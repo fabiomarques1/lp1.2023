@@ -20,9 +20,9 @@ public class DatasJava {
         
         //Hora do Dia
         int hora = c.get(Calendar.HOUR_OF_DAY);
-        if (hora > 6 && hora < 12) {
+        if (hora >= 6 && hora < 12) {
             System.out.println("Bom dia!");        
-        } else if (hora > 12 && hora < 18) {
+        } else if (hora >= 12 && hora < 18) {
             System.out.println("Boa tarde!");
         } else {
             System.out.println("Boa noite!");
