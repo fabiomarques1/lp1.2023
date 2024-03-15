@@ -85,6 +85,9 @@ public class Frame extends javax.swing.JFrame {
         if (nome.isBlank()) {
             JOptionPane.showMessageDialog(this, "Informe o nome");
             jTextField1.requestFocus();
+        } else if (jFormattedTextField1.getText().equals("  /  /    ")) {
+            JOptionPane.showMessageDialog(this, "Informe a data");
+            jFormattedTextField1.requestFocus();
         } else {
             Date data = null;
             SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
@@ -101,7 +104,7 @@ public class Frame extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Data \"" + jFormattedTextField1.getText() + "\" é inválida");
                 jFormattedTextField1.requestFocus();
             }
-            
+
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
